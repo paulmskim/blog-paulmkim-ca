@@ -1,0 +1,23 @@
+{
+  "name": "blog-paul-kim",
+  "version": "1.0.0",
+  "description": "Blog for Paul Kim",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-util": "*",
+    "gulp-sass": "*",
+    "gulp-clean-css": "*",
+    "gulp-rename": "*",
+    "gulp-autoprefixer": "*",
+    "del": "*",
+    "gulp-uglify": "*",
+    "breakpoint-sass": "^2.6.1",
+    "compass-mixins": "^0.12.7",
+    "gulp-plumber": "^1.0.1",
+    "node-sass-globbing": "^0.0.23"
+  },
+  "scripts": {},
+  "author": "Paul",
+  "license": "ISC"
+}

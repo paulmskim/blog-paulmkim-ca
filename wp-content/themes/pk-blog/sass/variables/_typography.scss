@@ -1,0 +1,32 @@
+@font-face{
+  font-family: Source Sans Pro Light;
+  src: url(../fonts/SourceSansPro-Light.woff2) format('woff2'),
+       url(../fonts/SourceSansPro-Light.woff) format('woff'),
+       url(../fonts/SourceSansPro-Light.ttf) format('truetype')
+}
+
+@font-face{
+  font-family: FontAwesome;
+  src: url(../fonts/fontawesome-webfont.woff2) format('woff2'),
+       url(../fonts/fontawesome-webfont.woff) format('woff'),
+       url(../fonts/fontawesome-webfont.ttf) format('truetype')
+}
+
+$fontFamily: Source Sans Pro Light, Helvetica, Arial, sans-serif;
+
+$rootFontSize: 16px;
+$logoFontSize: 1.5rem;
+$menuFontSize: 1.5rem;
+$dateFontSize: 0.875rem;
+
+$mobileFontSize: 1rem;
+$mobileExcerptFontSize: 0.875rem;
+$mobilePageTitleFontSize: 1.375rem;
+$mobileListTitleFontSize: 1.75rem;
+$mobilePostTitleFontSize: 2.5rem;
+
+$tabletFontSize: 1.125rem;
+$tabletExcerptFontSize: 1rem;
+$tabletPageTitleFontSize: 1.5rem;
+$tabletListTitleFontSize: 2rem;
+$tabletPostTitleFontSize: 3rem;

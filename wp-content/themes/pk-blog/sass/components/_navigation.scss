@@ -1,0 +1,66 @@
+.main-navigation, .menu-toggle {
+  padding: 0 1rem;
+}
+
+.main-navigation {
+  font-size: $menuFontSize;
+  clear: none;
+  float: none;
+  overflow: hidden;
+  position: absolute;
+  transform: translateY(-100%);
+
+  .menu-close-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    line-height: 1;
+    padding: 0 0.25rem;
+    cursor: pointer;
+  }
+
+  .menu {
+    padding: 1.5rem 0;
+    display: block;
+  }
+
+  li {
+    float: none;
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  a {
+    display: inline-block;
+  }
+}
+
+.menu-toggle {
+  display: inline-block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+@include breakpoint($tabletBP) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-navigation {
+    transform: none;
+    position: static;
+
+    .menu-close-btn {
+      display: none;
+    }
+
+    .menu {
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0.5rem 3rem;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.site-header {
+  flex: 0 0 auto;
+  text-align: center;
+  padding-bottom: 2rem;
+  @extend %max-width-below;
+  @extend %site-z-index;
+}
+
+.site-branding {
+  padding: 1rem;
+}
+
+.custom-logo-link {
+  font-size: $logoFontSize;
+  display: inline-block;
+  margin: 0.5rem 0 1rem;
+}
+
+@include breakpoint($tabletBP) {
+  .site-header {
+    display: flex;
+    flex-direction: column-reverse;
+    @include max-width-above($maxWidth);
+  }
+}

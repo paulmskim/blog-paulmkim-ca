@@ -1,0 +1,30 @@
+html { font-size: $rootFontSize; }
+
+body {
+  font-size: $mobileFontSize;
+  font-family: $fontFamily;
+  color: $contentFontColor;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &, &:visited {
+    color: $labelFontColor;
+  }
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: $linkFontColor;
+  }
+  &.active {
+    color: $linkFontColor;
+  }
+}
+
+@include breakpoint($tabletBP) {
+  body {
+    font-size: $tabletFontSize;
+  }
+}

@@ -1,0 +1,125 @@
+@import "compass";
+@import "breakpoint";
+
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/**/*";
+
+body {
+  background: $backgroundColor;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-content {
+  flex: 1 1 auto;
+  padding: 1rem;
+  @extend %max-width-below;
+  @extend %site-z-index;
+}
+
+.page-title {
+  font-size: $mobilePageTitleFontSize;
+}
+
+pre {
+  background: $offsetBackgroundColor;
+}
+
+.hentry {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.posted-on {
+  font-size: $dateFontSize;
+}
+
+.entry-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+h2.entry-title {
+  font-size: $mobileListTitleFontSize;
+}
+
+h1.entry-title {
+  font-size: $mobilePostTitleFontSize;
+}
+
+.entry-excerpt {
+  font-size: $mobileExcerptFontSize;
+}
+
+.entry-intro {
+  text-align: center;
+  font-style: italic;
+}
+
+.entry-divider {
+  width: 35%;
+  height: 0.1875rem;
+  background: $labelFontColor;
+  margin: 3rem auto;
+}
+
+.entry-content {
+  margin: 0;
+}
+
+.site-main-single {
+  .hentry {
+    padding: 2rem 0 0;
+  }
+  .entry-header {
+    text-align: center;
+  }
+  .entry-content {
+    margin: 2rem 0 1rem;
+  }
+}
+
+.site-canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+@include breakpoint($tabletBP) {
+  .page-title {
+    font-size: $tabletPageTitleFontSize;
+  }
+
+  h2.entry-title {
+    font-size: $tabletListTitleFontSize;
+  }
+
+  h1.entry-title {
+    font-size: $tabletPostTitleFontSize;
+  }
+
+  .entry-excerpt {
+    font-size: $tabletExcerptFontSize;
+  }
+
+  .entry-divider {
+    margin: 4rem auto;
+  }
+
+  .site-main-single .entry-content {
+    margin: 3rem 0 1rem;
+  }
+}
+
+@include breakpoint($maxWidth) {
+  .site-content {
+    @include max-width-above($maxWidth);
+  }
+}
